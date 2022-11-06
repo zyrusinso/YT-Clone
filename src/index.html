@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Youtube Clone</title>
+</head>
+<body class="bg-gray-100 font-Roboto antialiased">
+  <header class="bg-white divide-y ml-18 fixed inset-x-0 select-none">
+    <div class="flex justify-between items-center h-14 mx-4 border-b">
+        <div class="-m-3">
+            <img src="/images/yt-logo.png" alt="Youtube" class="w-20 h-12">
+        </div>
+        <div class="flex item-center justify-center flex-grow">
+            <input 
+                type="text" 
+                placeholder="Search" 
+                class="border border-gray-400 h-8 px-1 py-2 focus:outline-none focus:border-blue-600 w-3/5"
+            >
+            <button 
+            class="bg-gray-200 flex items-center justify-center h-8 w-16 border border-gray-400 border-l-0 hover:bg-gray-300"
+            >
+                <i class="material-icons">search</i>
+            </button>
+        </div>
+        <div class="flex justify-center items-center space-x-4">
+            <button class="flex justify-center items-center">
+                <i class="material-icons">video_call</i>
+            </button>
+            <button class="flex justify-center items-center">
+                <i class="material-icons">apps</i>
+            </button>
+            <button class="flex justify-center items-center">
+                <i class="material-icons">notifications</i>
+            </button>
+            <button class="flex justify-center items-center">
+                <div class="h-8 w-8 rounded-full bg-blue-300">
+
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="flex items-center px-4 py-3 space-x-3">
+        <span class="text-sm bg-gray-700 border border-gray-800 rounded-full px-2 text-gray-200 shadow-inner">All Recommendations</span>
+        <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner">Tailwind CSS</span>
+        <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner">Tutorials</span>
+        <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner">Practice</span>
+        <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner">Tailwind CSS</span>
+        <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner">Tutorials</span>
+        <span class="text-sm bg-gray-200 border border-gray-300 rounded-full px-2 text-gray-800 shadow-inner">Practice</span>
+    </div>
+  </header>
+
+  <aside class="fixed w-18 h-screen bg-white top-0 flex items-center flex-col mt-4 text-gray-700">
+    <button><i class="material-icons">menu</i></button>
+    <div class="mt-6 w-full">
+        <button class="flex flex-col items-center justify-center w-full hover:bg-gray-200 py-3 text-red-600">
+            <i class="material-icons small">home</i>
+            <span class="text-xs">Home</span>
+        </button>
+        <button class="flex flex-col items-center justify-center w-full hover:bg-gray-200 py-3">
+            <i class="material-icons small">local_fire_department</i>
+            <span class="text-xs">Trending</span>
+        </button>
+        <button class="flex flex-col items-center justify-center w-full hover:bg-gray-200 py-3">
+            <i class="material-icons small">subscriptions</i>
+            <span class="text-xs">Subscriptions</span>
+        </button>
+        <button class="flex flex-col items-center justify-center w-full hover:bg-gray-200 py-3">
+            <i class="material-icons small">video_library</i>
+            <span class="text-xs">Library</span>
+        </button>
+    </div>
+  </aside>
+
+  <main class="ml-24 pt-8">
+    <div class="border-b-4 border-gray-500 pb-18">
+        <h3 class="text-xl font-bold">Recommended</h3>
+        <div class="mt-4 grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-y-10 gap-x-2">
+            <div class="w-68">
+                <div class="h-48 w-full bg-gray-700"></div>
+                <div class="flex mt-2">
+                    <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0"></div>
+                    <div class="ml-2">
+                        <div class="text-sm font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="text-xs text-gray-600">
+                            <p>Channel Name</p>
+                            <p>9 hours ago &middot; 87k views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-68">
+                <div class="h-48 w-full bg-gray-700"></div>
+                <div class="flex mt-2">
+                    <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0"></div>
+                    <div class="ml-2">
+                        <div class="text-sm font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="text-xs text-gray-600">
+                            <p>Channel Name</p>
+                            <p>9 hours ago &middot; 87k views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-68">
+                <div class="h-48 w-full bg-gray-700"></div>
+                <div class="flex mt-2">
+                    <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0"></div>
+                    <div class="ml-2">
+                        <div class="text-sm font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="text-xs text-gray-600">
+                            <p>Channel Name</p>
+                            <p>9 hours ago &middot; 87k views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-68">
+                <div class="h-48 w-full bg-gray-700"></div>
+                <div class="flex mt-2">
+                    <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0"></div>
+                    <div class="ml-2">
+                        <div class="text-sm font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="text-xs text-gray-600">
+                            <p>Channel Name</p>
+                            <p>9 hours ago &middot; 87k views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-68">
+                <div class="h-48 w-full bg-gray-700"></div>
+                <div class="flex mt-2">
+                    <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0"></div>
+                    <div class="ml-2">
+                        <div class="text-sm font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="text-xs text-gray-600">
+                            <p>Channel Name</p>
+                            <p>9 hours ago &middot; 87k views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-68">
+                <div class="h-48 w-full bg-gray-700"></div>
+                <div class="flex mt-2">
+                    <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0"></div>
+                    <div class="ml-2">
+                        <div class="text-sm font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="text-xs text-gray-600">
+                            <p>Channel Name</p>
+                            <p>9 hours ago &middot; 87k views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-68">
+                <div class="h-48 w-full bg-gray-700"></div>
+                <div class="flex mt-2">
+                    <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0"></div>
+                    <div class="ml-2">
+                        <div class="text-sm font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="text-xs text-gray-600">
+                            <p>Channel Name</p>
+                            <p>9 hours ago &middot; 87k views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-68">
+                <div class="h-48 w-full bg-gray-700"></div>
+                <div class="flex mt-2">
+                    <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0"></div>
+                    <div class="ml-2">
+                        <div class="text-sm font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+                        <div class="text-xs text-gray-600">
+                            <p>Channel Name</p>
+                            <p>9 hours ago &middot; 87k views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-4">
+        <h3 class="text-xl font-bold">Latest Youtube Post</h3>
+        <div class="mt-2 grid grid-cols-3 gap-6">
+            <div class="w-92 bg-white flex flex-col px-3 py-2 border border-gray-400">
+                <div class="flex items-center">
+                    <div class="w-6 h-6 bg-blue-300 rounded-full"></div>
+                    <div class="text-sm text-gray-600 ml-2">
+                        <p>Lorem, ipsum. &middot; 6 hours ago</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, pariatur!
+                    </p>
+                    <div class="w-32 h-32 bg-gray-600 flex-shrink-0">
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-between text-sm text-gray-600 mt-3">
+                    <div class="flex items-center">
+                        <button><i class="material-icons">thumb_up</i></button>
+                        <div class="ml-1">174</div>
+                        <button class="ml-2"><i class="material-icons">thumb_down</i></button>
+                    </div>
+                    <div class="flex items-start">
+                        <button><i class="material-icons small">comment</i></button>
+                        <div class="ml-1">24</div>
+                        <button class="ml-3"><i class="material-icons small">more_vert</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-94 bg-white flex flex-col px-3 py-2 border border-gray-400">
+                <div class="flex items-center">
+                    <div class="w-6 h-6 bg-blue-300 rounded-full"></div>
+                    <div class="text-sm text-gray-600 ml-2">
+                        <p>Lorem, ipsum. &middot; 6 hours ago</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, pariatur!
+                    </p>
+                    <div class="w-32 h-32 bg-gray-600 flex-shrink-0">
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-between text-sm text-gray-600 mt-3">
+                    <div class="flex items-center">
+                        <button><i class="material-icons">thumb_up</i></button>
+                        <div class="ml-1">174</div>
+                        <button class="ml-2"><i class="material-icons">thumb_down</i></button>
+                    </div>
+                    <div class="flex items-start">
+                        <button><i class="material-icons small">comment</i></button>
+                        <div class="ml-1">24</div>
+                        <button class="ml-3"><i class="material-icons small">more_vert</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-94 bg-white flex flex-col px-3 py-2 border border-gray-400">
+                <div class="flex items-center">
+                    <div class="w-6 h-6 bg-blue-300 rounded-full"></div>
+                    <div class="text-sm text-gray-600 ml-2">
+                        <p>Lorem, ipsum. &middot; 6 hours ago</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, pariatur!
+                    </p>
+                    <div class="w-32 h-32 bg-gray-600 flex-shrink-0">
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-between text-sm text-gray-600 mt-3">
+                    <div class="flex items-center">
+                        <button><i class="material-icons">thumb_up</i></button>
+                        <div class="ml-1">174</div>
+                        <button class="ml-2"><i class="material-icons">thumb_down</i></button>
+                    </div>
+                    <div class="flex items-start">
+                        <button><i class="material-icons small">comment</i></button>
+                        <div class="ml-1">24</div>
+                        <button class="ml-3"><i class="material-icons small">more_vert</i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-94 bg-white flex flex-col px-3 py-2 border border-gray-400">
+                <div class="flex items-center">
+                    <div class="w-6 h-6 bg-blue-300 rounded-full"></div>
+                    <div class="text-sm text-gray-600 ml-2">
+                        <p>Lorem, ipsum. &middot; 6 hours ago</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <p class="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, pariatur!
+                    </p>
+                    <div class="w-32 h-32 bg-gray-600 flex-shrink-0">
+
+                    </div>
+                </div>
+                <div class="flex items-center justify-between text-sm text-gray-600 mt-3">
+                    <div class="flex items-center">
+                        <button><i class="material-icons">thumb_up</i></button>
+                        <div class="ml-1">174</div>
+                        <button class="ml-2"><i class="material-icons">thumb_down</i></button>
+                    </div>
+                    <div class="flex items-start">
+                        <button><i class="material-icons small">comment</i></button>
+                        <div class="ml-1">24</div>
+                        <button class="ml-3"><i class="material-icons small">more_vert</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+</body>
+</html>
